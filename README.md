@@ -30,7 +30,16 @@ An understanding of the following concepts and techniques:
 # Questions
 
 - What is the complexity of each of the four search methods in terms of array or list size n?
+For findTeamMinFunding and findTeamPosition each operations is ran once for each item on the list, value of n. However, findTeamMinFundingFast cuts the search space in half, thus it's complexity is in porpotion to how many divisions it takes to narrow the search space (O(log(n))).
+
 - What happens in the case of binary search if the array is not sorted?
+    There will be a logic error. The program may do a number of glitches such as an endless loop.
+
 - What is the purpose of constructor argument validity checking?
+    It prevents runtime errors caused by methods attempting operations on null values.
+
 - What is the purpose of using the keyword `final` with variables and arguments?
+    The key word 'final' initializes variables and arguments so that their values can not be altered.
+
 - What are alternatives to using `Optional` and how do they compare?
+    You can use @Nullable and @NonNull which are more efficent, however, it is only supported in a few IDES.
